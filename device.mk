@@ -255,6 +255,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qc.sensors.wl_dis=true \
 	ro.qualcomm.sensors.smd=true
 
+# SDCardFS
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=1
+
 # IO Scheduler
 PRODUCT_PROPERTY_OVERRIDES += \
 	sys.io.scheduler=bfq

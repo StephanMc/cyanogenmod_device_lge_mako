@@ -267,6 +267,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     Snap
 
+# Unbreak videorecording with Snap Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.camera.cpp.duplication=false
+
 # Telephony (from android_device_samsung_jf-common. si ca ne marche pas, voir le patch sur telephony 	CyanogenMod/android_packages_services_Telecomm)
 PRODUCT_PACKAGES += \
     telephony-ext

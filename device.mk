@@ -276,9 +276,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false
 
-
+# Needed for legacy Camera HAL1
 PRODUCT_PROPERTY_OVERRIDES += \
-    media.stagefright.legacyencoder=1
+    media.stagefright.legacyencoder=true
+
+# Needed for legacy Camera HAL1
+PRODUCT_PROPERTY_OVERRIDES += \
+    media.stagefright.less-secure=true
 
 
 # Enable Google Assistant
@@ -286,7 +290,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opa.eligible_device=true
 
 
-# Telephony (from android_device_samsung_jf-common. si ca ne marche pas, voir le patch sur telephony 	CyanogenMod/android_packages_services_Telecomm)
+# Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
 

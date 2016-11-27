@@ -139,8 +139,8 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HARDWARE_CLASS := device/lge/mako/cmhw/
 #BOARD_USES_QCOM_HARDWARE := true
 
-# Disable clang, fix sensors
-# USE_CLANG_PLATFORM_BUILD := false
+# Build libc with gcc
+TARGET_NEEDS_GCC_LIBC := true
 
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
